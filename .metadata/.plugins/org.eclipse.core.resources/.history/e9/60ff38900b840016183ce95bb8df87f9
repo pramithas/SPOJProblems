@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Test {
+	public static void main(String args[]) {
+		Scanner input = new Scanner(System.in);
+		int testCases = input.nextInt();
+		input.nextLine();
+		int counter = 0;
+		while (counter < testCases) {
+			String inputString = input.nextLine();
+			String str = compute(inputString, new StringBuilder(inputString).reverse().toString());
+			System.out.println(inputString.length() - str.length());
+			counter++;
+		}
+	}
+
+	private static String compute(String s1, String s2) {
+		;
+	}
+}

@@ -1,0 +1,17 @@
+
+public class Test {
+	public static void main(String args[]){
+		System.out.println(compute("abcde","ace"));
+	}
+	
+	private static String compute(String string1,String string2) {
+		
+		for(int i=string1.length();i>0;i--){
+			for(int j=string2.length();j>0;j--){
+				if(string1.charAt(i)==string2.charAt(j)){
+					return string1.charAt(i)+compute("as","as");
+				}
+			}
+		}
+	}
+}
